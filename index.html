@@ -388,33 +388,44 @@
       <!-- MODAL -->
      <div class="baskdrob" data-modal>
          <div class="modal">
-            <button type="button" data-modal-close class="modal-clouse-btn">x</button>
+            <button type="button" data-modal-close class="modal-clouse-btn">
+                <svg class="modal-btn-icon" width="11" height="11">
+                <use href="./img/symbol-defs.svg#icon-vetor-x"></use>
+                </svg></button>
             <p class="modal-titel">Оставте свои данные, мы вам перезвоним </p> 
         <div class="modal-file">
             <form action="# " class="modal-form">
-                <label for="usar name"><p class="modal-text-lable">Имя</p>
+                <label for="usar name" class="modal-lable-input"><p class="modal-text-lable">Имя</p>
+                    <svg class="modal-lable-icon" width="12" height="12">
+                    <use href="./img/symbol-defs.svg#icon-Vector-user"></use>
+                    </svg>
                     <input 
                         type="text" 
                         class="modal-input"
-                        placeholder="ваша почта"
                         name="user-name"
                         minlength=""
                         required
                     /></label>
                 
-                <label for="number"><p class="modal-text-lable">Телефон</p>
+                <label for="number" class="modal-lable-input"><p class="modal-text-lable">Телефон</p>
+                    <svg class="modal-lable-icon" width="13" height="13">
+                        <use href="./img/symbol-defs.svg#icon-Vector-tel"></use>
+                        </svg>
                     <input 
-                        type="number" 
+                        type="tel" 
                         class="modal-input"
                         placeholder=""
                         name=""
                         required
                     /></label>
-                <label for="email"><p class="modal-text-lable">Почта</p>
+                <label for="email" class="modal-lable-input"><p class="modal-text-lable">Почта</p>
+                    <svg class="modal-lable-icon" width="15" height="12">
+                        <use href="./img/symbol-defs.svg#icon-Vector-mail"></use>
+                        </svg>
                     <input 
                         type="email" 
                         class="modal-input"
-                        placeholder="ваша почта"
+                        placeholder=""
                         name="user-name"
                         required
                     /></label>
@@ -422,10 +433,8 @@
                     <label for=""><p class="modal-text-lable">Коментарий</p>
                         <textarea 
                         class="modal-textarea"
-                        name="user text" 
-                        id="user text" 
-                        cols="30" 
-                        rows="10" 
+                        placeholder="Введите текст"
+                         
                         resize: none;
                         > </textarea>
                     </label>
